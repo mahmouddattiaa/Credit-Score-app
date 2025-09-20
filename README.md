@@ -215,8 +215,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Mahmoud Attia** - Computer Engineering Student
 - GitHub: [@mahmouddattiaa](https://github.com/mahmouddattiaa)
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
+- Email: [mahmouddattia7@gmail.com]
+- LinkedIn: [mahmoud attia](https://www.linkedin.com/in/mahmoud-attia-b372b0352)]
 
 ---
 
