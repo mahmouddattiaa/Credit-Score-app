@@ -1,21 +1,37 @@
-# iScore Automatic Email Server Setup
+# iScore Email Server
 
-This email server enables automatic sending of credit reports from `focusritual1@gmail.com` to `mahmouddattiaa7@gmail.com`.
+Professional email service for automated credit report delivery and notifications.
 
-## Setup Instructions
+## 📋 Overview
 
-### 1. Install Dependencies
+This Node.js email server handles:
+- Automated weekly credit report delivery
+- User authentication emails
+- Notification system
+- PDF report generation and attachment
 
-Navigate to the email server directory and install the required packages:
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- Gmail account with App Password
+- SMTP access enabled
+
+### Installation
 
 ```bash
 cd email-server
 npm install
 ```
 
-### 2. Gmail Configuration
+### Configuration
 
-To use Gmail for sending emails, you need to:
+1. **Create environment file**:
+```bash
+cp .env.example .env
+```
+
+2. **Gmail App Password Setup**:
 
 1. **Enable 2-Factor Authentication** on your Google account (`focusritual1@gmail.com`)
 2. **Generate an App Password**:

@@ -33,3 +33,79 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+
+# Build outputs
+build/
+dist/
+out/
+
+# Temporary files
+tmp/
+temp/
+
+# Email server specific
+email-server/.env
+email-server/logs/
+
+# Reports and generated files
+reports/generated/
+*.pdf.backup
+
+# Testing
+test-results/
+coverage/
+
+# Android specific
+android/app/build/
+android/build/
+android/.gradle/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+*.keystore
+
+# iOS specific
+ios/build/
+ios/Pods/
+ios/**/*.xcworkspace
+ios/**/*.pbxuser
+ios/**/*.mode1v3
+ios/**/*.mode2v3
+ios/**/*.perspectivev3
+ios/**/*.xcuserstate
+ios/**/**/project.xcworkspace/
+ios/**/**/xcuserdata/

@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  iscore-email-server:
+    build: ./email-server
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - EMAIL_HOST=smtp.gmail.com
+      - EMAIL_PORT=587
+      - EMAIL_USER=${EMAIL_USER}
+      - EMAIL_PASS=${EMAIL_PASS}
+    volumes:
+      - ./logs:/app/logs
+      - ./assets/report:/app/reports
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  iscore-web:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - NODE_ENV=production
+      - API_BASE_URL=http://iscore-email-server:3000
+    depends_on:
+      - iscore-email-server
+    restart: unless-stopped
+
+volumes:
+  logs:
+  reports:

@@ -1,13 +1,16 @@
 {
   "expo": {
-    "name": "bolt-expo-nativewind",
-    "slug": "bolt-expo-nativewind",
+    "name": "iScore - Credit Monitoring",
+    "slug": "iscore-credit-app",
     "version": "1.0.0",
+    "description": "Credit score monitoring application for the Egyptian market",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "iscore",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "privacy": "public",
+    "platforms": ["ios", "android", "web"],
     "ios": {
       "supportsTablet": true
     },
