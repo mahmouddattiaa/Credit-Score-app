@@ -75,6 +75,8 @@ out/
 # Temporary files
 tmp/
 temp/
+*.prompt.md
+*.prompt.prompt.md
 
 # Email server specific
 email-server/.env
